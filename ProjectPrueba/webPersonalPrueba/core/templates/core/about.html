@@ -1,0 +1,24 @@
+{% extends "core/base.html" %}
+<title>{% block title %} Aventuras en Argentina {% endblock %}</title>
+{% load static %}
+{% block backgroubd %} {% static 'core/img/about-bg.jpg'%} {% endblock %}
+{% block headers %} 
+<h1>Acerca de Nosotros</h1>
+<span class="subheading">Desarrollamos Turismo por zonas<<span>
+{% endblock %}
+
+{% block content%}
+<!-- Contenido Principal -->
+    <div class="container">
+      <div class="row">   
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Aventuras en Argentina</h2>   
+          <p>Nuestra empresa inició sus actividades en 2020, orientando sus servicios hacia un público exigente</p> 
+          <p>Gracias a nuestra credibilidad contamos con una amplia cartera de clientes</p>
+          <p>Ofrecemos servicios de turismo y asesoramiento muy completo en excursiones, itinerarios y paquetes de viaje.</p>
+        </div>
+      </div>  
+    </div> <br>
+
+{% endblock %}
+    

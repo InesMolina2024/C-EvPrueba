@@ -1,0 +1,42 @@
+{% extends "core/base.html" %}  
+ <title>{% block title %} Aventuras en Argentina {% endblock %}</title>
+ {% load static %}
+{% block backgroubd %} {% static 'core/img/Portfolio-bg.jpg'%} {% endblock %}
+{% block headers %} 
+<h1>Nuestros itinerarios/h1>
+<span class="subheading">Nuestros Proyectos</span>
+{% endblock headers %} 
+
+{% block content%}
+  <!-- Contenido Principal -->
+	    <div class="container">
+	      <!-- Proyecto -->
+	      <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			    <img class="img-fluid" src="{% static 'core/img/portfolio-bg.jpg'%}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      	    <h2 class="section-heading title">Segundo proyecto</h2>   
+	            <p>Excursiones en Tucumán: Tafí del Valle, Yungas, City tour de San Miguel, turismo alternativo y camino de sabores.</p>
+	            <p><a href="https://www.institucionalturismotuc.gob.ar">Más información</a></p>
+	      	</div>
+            </div>
+            </div>
+	      <!-- Proyecto -->
+	    <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			<img class="img-fluid" src=" {% statict 'core/img/about-bg.jpg'%} " alt=""> 
+{% endblock %}
+
+{% block content%}
+			
+			      
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      	    <h2 class="section-heading title">Primer proyecto</h2>   
+	            <p> Excursiones en Jujuy, energía viva en Salinas, Color en los Valles, Magia de la Quebrada y Verde Yungas.</p>
+	            <p><a href="https://casadejujuy.jujuy.gob.ar">Más información</a></p>
+	      	</div>
+            </div>
+{% endblock %}
+        
